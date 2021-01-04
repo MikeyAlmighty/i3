@@ -211,7 +211,7 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 
-bindsym $mod+shift+x exec i3lock
+bindsym $mod+shift+x exec i3lock -t -i ~/Pictures/pink_floyd.png
 
 exec google-chrome
 exec feh --bg-scale ~/Pictures/wallpaper.jpg
