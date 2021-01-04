@@ -152,9 +152,9 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Leave the simulation?' -B 'Blue pill' 'i3-msg exit'"
 
 
-set $bg-color 	         #003200
-set $inactive-bg-color   #003200
-set $text-color          #45ff08
+set $bg-color 	         #3A104D
+set $inactive-bg-color   #300145
+set $text-color          #50EB02
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
 
