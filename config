@@ -105,9 +105,9 @@ bindsym $mod+a focus parent
 # set $workSpace1 
 # set $workSpace1
 set $ws1 "1: WWW"
-set $ws2 "2: Mission Control"
-set $ws3 "3: Email"
-set $ws4 "4"
+set $ws2 "2: Vim"
+set $ws3 "3: Mission Control"
+set $ws4 "4: Email"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
@@ -117,7 +117,7 @@ set $ws10 "0: Music"
 
 workspace $ws1 output HDMI-1
 workspace $ws2 output HDMI-1
-workspace $ws3 output eDP-1
+workspace $ws4 output eDP-1
 workspace $ws10 output eDP-1
 
 
@@ -125,7 +125,7 @@ workspace $ws10 output eDP-1
 bindsym $mod+1 workspace $ws1
 bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
-bindsym $mod+4 workspace number $ws4
+bindsym $mod+4 workspace $ws4
 bindsym $mod+5 workspace number $ws5
 bindsym $mod+6 workspace number $ws6
 bindsym $mod+7 workspace number $ws7
@@ -155,7 +155,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 set $bg-color 	         #3A104D
 set $inactive-bg-color   #300145
-set $text-color          #50EB02
+set $text-color          #F542E0
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
 
@@ -215,6 +215,12 @@ bindsym $mod+r mode "resize"
 bindsym $mod+shift+x exec i3lock -t -i ~/Pictures/Wallpapers/heart.png
 
 exec google-chrome
+exec thunderbird
+exec spotify
+
+for_window [class="Thunderbird"] move container to workspace $ws4
+for_window [class="Spotify"] move container to workspace $ws10
+
 exec feh --bg-scale ~/Pictures/Wallpapers/heart.png
 exec xrandr --output HDMI-1 --primary --mode 1920x1080 --rate 143.98 --output eDP-1 --mode 1920x1080 --right-of HDMI-1
 
