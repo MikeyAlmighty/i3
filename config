@@ -215,11 +215,6 @@ bindsym $mod+r mode "resize"
 bindsym $mod+shift+x exec i3lock -t -i ~/Pictures/Wallpapers/heart.png
 
 exec google-chrome
-exec thunderbird
-exec spotify
-
-for_window [class="Thunderbird"] move container to workspace $ws4
-for_window [class="Spotify"] move container to workspace $ws10
 
 exec feh --bg-scale ~/Pictures/Wallpapers/heart.png
 exec xrandr --output HDMI-1 --primary --mode 1920x1080 --rate 143.98 --output eDP-1 --mode 1920x1080 --right-of HDMI-1
