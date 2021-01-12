@@ -215,5 +215,5 @@ bindsym $mod+shift+x exec i3lock -t -i ~/Pictures/pink_floyd.png
 
 exec google-chrome
 exec feh --bg-scale ~/Pictures/wallpaper.jpg
-exec xrandr --output DP-4 --primary --mode 1920x1080 --rate 143.98 --output HDMI-0 --mode 1920x1080 --right-of DP-4
+exec xrandr --output DP-4 --primary --mode 1920x1080 --rate 143.98
 
