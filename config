@@ -115,9 +115,8 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "0: Music "
 
-workspace $ws1 output DP-5
-workspace $ws2 output DP-5
-workspace $ws10 output HDMI-0
+workspace $ws1 output DP-4
+workspace $ws2 output DP-4
 
 
 # switch to workspace
@@ -152,9 +151,9 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Leave the simulation?' -B 'Blue pill' 'i3-msg exit'"
 
 
-set $bg-color 	         #3A104D
-set $inactive-bg-color   #300145
-set $text-color          #50EB02
+set $bg-color 	         #000000
+set $inactive-bg-color   #000000
+set $text-color          #41F01A
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
 
@@ -170,7 +169,6 @@ hide_edge_borders both
 # bar
 bar {
     status_command i3status
-    tray_output primary
 	colors {
 		background $bg-color
 	    	separator #757575
@@ -211,9 +209,9 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 
-bindsym $mod+shift+x exec i3lock -t -i ~/Pictures/pink_floyd.png
+bindsym $mod+shift+x exec i3lock -t -i ~/Pictures/lock.png
 
-exec google-chrome
+exec brave
 exec feh --bg-scale ~/Pictures/wallpaper.jpg
 exec xrandr --output DP-4 --primary --mode 1920x1080 --rate 143.98
 
