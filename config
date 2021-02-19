@@ -154,9 +154,9 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 
-set $bg-color 	         #3A104D
-set $inactive-bg-color   #300145
-set $text-color          #F542E0
+set $bg-color 	         #050a01
+set $inactive-bg-color   #050a01
+set $text-color          #6fcc31
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
 
